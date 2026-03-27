@@ -1,4 +1,4 @@
-# CGPA_Calculator-
+# CGPA Calculator (Java Swing)
 
 ## Description
 
@@ -16,12 +16,12 @@ This project is a desktop-based CGPA Calculator developed using Java Swing. The 
 
 ## Features
 
-* Simple and user-friendly graphical interface
-* Input validation for grade (0–4) and credit (>0)
-* Dynamic addition of multiple subjects
+* Simple and user-friendly graphical user interface
+* Input validation for grade (0–4) and credit
+* Addition of multiple subjects
 * Scrollable display area for subject entries
 * CGPA calculation with precision up to 4 decimal places
-* Reset option to clear all inputs and results
+* Remove option to clear all inputs and results
 
 ---
 
@@ -49,7 +49,7 @@ The user enters subject details (name, grade, and credit) and clicks **Add Subje
 When **Calculate CGPA** is clicked, the program:
 
 * Reads all stored subject entries
-* Splits them into individual lines
+* Splits them into individual lines and slices grade and credits strings
 * Extracts grade and credit values using string parsing
 * Computes CGPA using the formula:
 
@@ -61,8 +61,8 @@ The result is then displayed in the CGPA field.
 
 ## Challenges Faced
 
-* Handling user input errors such as invalid numbers and empty fields
-* Managing string parsing reliably based on fixed formatting
+* Handling user input errors such as invalid numbers
+* Managing string parsing reliably based on fixed formatting, and slicing specific portions form the text area
 * Ensuring proper GUI behavior using event-driven programming
 
 ---
@@ -70,16 +70,16 @@ The result is then displayed in the CGPA field.
 ## Limitations
 
 * Relies on strict string formatting for parsing
-* Uses null layout, which is not responsive
+* Uses null layout, manually setting coordinates
 * No persistent storage (data is lost after closing the application)
 
 ---
 
 ## Possible Improvements
 
-* Replace string-based storage with object-oriented structures (e.g., ArrayList)
-* Use layout managers for better UI responsiveness
-* Add file or database support for saving and retrieving data
+* Replacing string-based storage with object-oriented structures like Arraylist.
+* Using layout managers for better UI responsiveness as they adjust the components according to the screen resolution.
+* Adding a import option to import data from CSV fils or adding multiple user profile option to store sessions.
 
 ---
 
